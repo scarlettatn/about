@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 
 app.get("/", function(req, res) {
-  res.send("It's working!")
+  res.send({"name": "Jane Doe"}) // Should be json format
 })
 
 app.listen(3000, () => {
